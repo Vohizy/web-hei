@@ -1,0 +1,135 @@
+body{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: #6c7279
+}
+nav{
+    width: auto;
+}
+.container-capture{
+    position: relative;
+}
+.img{
+    width: 100%;
+    height: auto;
+}
+#box{
+    position: absolute;
+    right: 0px;
+    top: 180px;
+    margin-right: 5px;
+    border-radius: 9px;
+    color: black;
+    background-color: #6c7279;
+    opacity: 0.7;
+}
+#box p{
+    color: rgb(241, 235, 235);
+}
+#txt{
+    padding-top: 0%;
+}
+
+#Acceuil, #contacts{
+    background-color: rgb(250, 211, 137);
+
+
+}
+
+#Acceuil > div > ul, .footer-share {
+    list-style-type: none;
+
+}
+#contacts > div > div > ul{
+    list-style-type: none;
+
+}
+a{
+    padding-left: 3px;
+}
+
+/**-----------------------------------------------------------------------------*/
+ .hover_area{
+     margin-bottom: 30px;
+     width: 300px;
+     overflow: hidden;
+     position: relative;
+     margin-right: 0px;
+ }
+ .hover_overlay{
+     position: absolute;
+     top: 0px;
+     left: 0;
+     background-color: rgb(247, 189, 83);
+     border:#6c7279 solid 5px;
+     width: 100%;
+     height: 100%;
+     opacity: 0;
+     transition: all 0.5s;
+     border-radius: 4px;
+     
+ }
+ .hover_img img{
+    border-radius: 4px;
+
+ }
+ .hover_area:hover .hover_overlay{
+     opacity: 1;
+ }
+ .hover_content{
+     position: absolute;
+     width: 100%;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     text-align: center;
+     transition: all 0.5s;
+     opacity: 0;
+ }
+ .hover_area:hover  .hover_content{
+     opacity: 1;
+ }
+ .hover_content h4{
+     color: aliceblue;
+ }
+ .hover_content ul{
+     margin-top: 20px;
+ }
+ .hover_content ul li{
+     display: inline-block;
+     margin-left: 10px;
+     margin-right: 10px;
+ }
+
+ /**footer*/
+ .footer{
+     border-top:rgb(14, 2, 27) solid 3px;
+ }
+ #icon{
+    color: rgb(12, 37, 107);
+}
+ @media screen and (max-width: 480px) {
+    #box{
+        font-size: 13px;
+        top: 0%;
+        text-align: center;
+    }
+    #box h1{
+        font-size: 21px;
+    }
+    .container-capture .img{
+        height: 230px
+    }
+    div.col-lg-4.col-md-6.col-sm-12{
+        width: 301px;
+    }
+ }
+ @media screen and (max-width: 768px) {
+    #box{
+        font-size: 13px;
+    }
+    div.col-lg-4.col-md-6.col-sm-12{
+        width: 328px;
+    }
+}
+
